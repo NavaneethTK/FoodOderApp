@@ -54,10 +54,10 @@ export function CreateBill() {
   };
   return (
     <>
-      <div className="h-screen flex flex-col justify-center items-center gap-10 bg-black text-white ">
+      <div className="h-screen flex flex-col justify-center items-center gap-10 bg-[#343a40] text-white ">
         <h1 className="text-[30px] font-mono text-[#5bccd6] ">Created Bill</h1>
         <div className="flex gap-[100px] ">
-          <div>Select Table</div>
+          <div className="text-[20px]">Select Table</div>
           <Dropdown
             SelectTable={SelectTable}
             value={selTab}
@@ -66,9 +66,9 @@ export function CreateBill() {
         </div>
         <div
           ref={printRef}
-          className="border-[1px] p-[20px] rounded-lg text-black bg-white"
+          className="border-[3px] border-[#a5d8ff] p-[20px] rounded-lg text-black bg-[#ced4da]"
         >
-          <div className="flex gap-[70px] pb-[20px] text-[#d9480f]">
+          <div className="flex gap-[70px] pb-[10px] px-[5px] text-[#d9480f] ">
             <p>Items</p>
             <p>MRP</p>
             <p>Count</p>
@@ -138,13 +138,13 @@ export function CreateBill() {
         </div>
         <div className="flex gap-[100px]">
           <NavLink to={"/takeoder"}>
-            <button className="px-[10px] border-[1px] rounded-lg text-[#e03131] border-[#c2255c]">
+            <button className="px-[10px] border-[2.9px] rounded-lg text-[#e03131] border-[#c2255c]">
               Back
             </button>
           </NavLink>
           <button
             onClick={downloadBill}
-            className="px-[10px] border-[1px] rounded-lg text-[#38d9a9] border-[#087f5b]"
+            className="px-[10px] border-[2.9px] rounded-lg text-[#38d9a9] border-[#087f5b]"
           >
             Download Bill
           </button>

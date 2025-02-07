@@ -4,13 +4,13 @@ function Dropdown(props) {
       <div>
         <select
           onChange={props.changeTable}
-          className="text-[#bac8ff] font-medium  bg-black  border-[#eebefa] border-[1px] px-[10px] text-[18px] rounded-lg"
+          className="text-[#bac8ff] font-medium  bg-[#343a40]  border-[#eebefa] border-[1px] px-[10px] text-[18px] rounded-lg"
         >
           {props.SelectTable.map((opt, id) => (
             <option
               selected={props.value === opt.lable}
               key={id}
-              className="text-[#bac8ff] bg-black  font-medium "
+              className="text-[#bac8ff] bg-[#343a40]  font-medium "
             >
               {opt.lable}
             </option>
