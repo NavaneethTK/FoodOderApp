@@ -12,7 +12,6 @@ function Count({
 }) {
   const rate = FoodRate;
   const sum = rate * Foodcount;
-
   return (
     <>
       <div className="flex flex-col gap-[28px] items-center">
@@ -31,7 +30,6 @@ function Count({
             btnName="-"
             onClick={Decrement}
           />
-
           <p className="text-[#fff3bf] font-medium  ">{Foodcount}</p>
           <Button
             type="button"

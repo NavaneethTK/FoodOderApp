@@ -4,13 +4,8 @@ import { FoodContext } from "./App";
 import { NavLink } from "react-router-dom";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
+import Button from "./components/Button";
 
-// const SelectTable = [
-//   { lable: "Table 1" },
-//   { lable: "Table 2" },
-//   { lable: "Table 3" },
-//   { lable: "Table 4" },
-// ];
 const FoodRate = {
   IdliRate: 15,
   ChapatiRate: 20,
@@ -138,16 +133,16 @@ export function CreateBill() {
         </div>
         <div className="flex gap-[100px]">
           <NavLink to={"/takeoder"}>
-            <button className="px-[10px] border-[2.9px] rounded-lg text-[#e03131] border-[#c2255c]">
-              Back
-            </button>
+            <Button
+              className="px-[10px] border-[2.9px] rounded-lg text-[#e03131] border-[#c2255c]"
+              btnName={"Back"}
+            />
           </NavLink>
-          <button
+          <Button
             onClick={downloadBill}
             className="px-[10px] border-[2.9px] rounded-lg text-[#38d9a9] border-[#087f5b]"
-          >
-            Download Bill
-          </button>
+            btnName={"Download Bill"}
+          />
         </div>
       </div>
     </>

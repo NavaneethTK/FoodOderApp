@@ -1,4 +1,3 @@
-// import TakeOdr from ('./TakeOdr')
 import Button from "./components/Button";
 import { NavLink } from "react-router-dom";
 export default function Home() {

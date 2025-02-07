@@ -29,7 +29,6 @@ const Amount = {
 
 export function TakeOdr() {
   const { count, setCount, selTab, setSelTab } = useContext(FoodContext);
-  // console.log(count, setCount, selTab, setSelTab);
   const Increment = (type) => {
     setCount({
       ...count,
