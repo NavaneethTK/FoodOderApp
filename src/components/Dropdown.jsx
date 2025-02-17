@@ -4,7 +4,7 @@ function Dropdown(props) {
       <div>
         <select
           onChange={props.changeTable}
-          className="text-[#bac8ff] font-medium  bg-[#343a40]  border-[#eebefa] border-[1px] px-[10px] text-[14px] rounded-lg md:text-[24px] md:border-[3px]"
+          className="text-[#bac8ff] font-medium  bg-[#343a40]  border-[#9ddf9e] border-[1px] px-[10px] text-[13px] rounded-lg md:text-[24px] md:border-[3px]"
         >
           {props.SelectTable.map((opt, id) => (
             <option
